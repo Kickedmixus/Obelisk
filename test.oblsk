@@ -6,22 +6,19 @@
 
 
 
-new var "x"
-var."x".val = 14
+new var "x";
+var."x".val = 14;
 
-new list "list"
-list."list".items = [1,2,4,6]
-list."list".items.3 = 3
+new list "list";
+list."list".items = [1,2,4,6];
+list."list".items.3 = 3;
 
-terminal_display{list."list".items}
-terminal_display{list."list".items.3}
+terminal_display{list."list".items};
+terminal_display{list."list".items.3};
 
-terminal_display{list."a".items.<var."x".val>}
+terminal_display{list."a".items.<var."x".val>};
 
-new func "func"
-func."func" = [(),(),(),()]
+new func "func";
+func."func" = [(),(),(),()];
 
-new var "i"
-
-#index variable, series of commands and index amount
-loop{<index."i">,<func.func>,10}
+new var "i";
